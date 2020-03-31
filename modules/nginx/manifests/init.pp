@@ -1,0 +1,4 @@
+exec{'instalação nginx':
+command
+
+}
