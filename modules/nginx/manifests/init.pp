@@ -2,6 +2,7 @@ class nginx{
 
 
 
+
   package { "nginx":
    ensure => present,
     require=> Class["system-update"],

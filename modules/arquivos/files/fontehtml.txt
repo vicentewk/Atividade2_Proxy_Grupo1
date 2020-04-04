@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Trabalho de Redes II - Grupo 1</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="div-12">
+      <nav class="div-12">
+        <a class="div-4" href="https://www.nginx.com/">NGINX</a>
+        <a class="div-4" href="https://www.apache.org/">APACHE</a>
+        <a class="div-4" href="https://puppet.com/">PUPPET</a>
+        <a class="div-4" href="https://www.vagrantup.com/">VAGRANT</a>
+      </nav>
+    </div>
+    <div class="inline-block">
+      <h1>Universidade Regional do Noroeste do Estado do Rio Grande do Sul</h1>
+      <h1>Trabalho de Redes de Computadores II - Grupo 1</h1>
+    </div>
+  </header>
+
+  <div class="div-12 center">
+    <div id="div-componentes">
+      <h1>Componentes</h1>
+    </div>
+
+    <div class="div-perfil div-12 center">
+      <div class="card-perfil">
+        <img class="img-perfil" src="imagens/user.png">
+        <p class="legenda-componentes">Kassuelo Moreira Okaszeski</p>
+      </div>
+      <div class="card-perfil">
+        <img class="img-perfil" src="imagens/user.png">
+        <p class="legenda-componentes">Ranieri Breunig da Silva</p>
+      </div>
+      <div class="card-perfil">
+        <img class="img-perfil" src="imagens/user.png">
+        <p class="legenda-componentes">Vicente Woitchumas Kryszczun</p>
+      </div>
+    </div>
+  </div>
+  <div class="div-12 center ">
+    <div class="div-12 task-description">
+      <h4>Descrição da Atividade</h4>
+      <hr>
+      <p class="justify">Cada grupo deve postar UMA atividade apenas identificada da seguinte forma:</p>
+      <p class="justify">Grupo0X.zip onde X é 1, 2, 4 ou 5</p>
+      <p class="justify">Neste arquivo deve constar o provisionamento completo de um box com um servidor de páginas web
+        (Apache ou Nginx).</p>
+      <p class="justify">A página deve ter conteúdo completo ou seja:</p>
+      <p class="justify">Identificar os componentes do grupo de forma clara;</p>
+      <p class="justify">Colocar uma comparação do Servidor Apache x Nginx;</p>
+      <p class="justify">Dicas de como provisionar um box incluindo o arquivo index.html ou index.php na forma de
+        "copia de arquivo";</p>
+      <p class="justify">Não pode ser usado a opção de content => "bla bla bla " conforme usado no exemplo index.html
+        no arquivo /manifest/default.pp ;</p>
+      <p class="justify">Deve ser usado o modelo do arquivo /modules/arquivos/manifest/init.pp onde é usado o comando
+        para criar um arquivo a partir de um "source";</p>
+      <p class="justify">Pode ser usado a estrutura exemplo do Cenario_Apache disponibilizado no ClassRoom, mas será
+        avaliado se a mesma encontra-se "limpa" ou seja só contenha arquivos pertinentes ao trabalho, não mais todos
+        do exemplo;</p>
+      <p class="justify">Esta atividade vale 7 pontos da primeira avaliação de 20 pontos.</p>
+      <p class="justify">Reforçando que sua entrega deve ocorrer até a 05/04 Domingo às 23:59 hs</p>
+    </div>
+  </div>
+  <div class="div-12">
+    <img id="img-nginx-apache" src="imagens/nginx.png">
+  </div>
+  <div class="div-12">
+    <section class="div-2">
+      <h2>Apache</h2>
+      <div class="text-section">
+        <p>O servidor Apache ou HTTP Apache Server, foi criado em 1995, por Rob Mccool, ele é responsável por uma grande
+          parte de todos os sites hospedados na internet, sendo um dos mais antigos e confiáveis servidores Web,
+          possuindo mais de 20 anos de atuação no mercado. </p>
+        <p>Como qualquer outro servidor Web, ele é responsável por envio de emails, mensagens, compras online,
+          requisições online e diversos outros serviços que utilizamos na internet. Ele possui licença gratuita, código
+          aberto e pode ser modificado e estudado por qualquer um.</p>
+        <p>Além disso, também, possui módulos que adicionam mais funções ao seu software, como o mod_ssl, que aciona a
+          capacidade do servidor a atender requisições utilizando o protocolo HTTPS, estes que, utilizam uma camada SSL
+          para criptografar os dados transferidos entre o cliente e o servidor, garantindo assim uma camada de segurança
+          e confiabilidade de dados, que é utilizada para certificações digitais e também comprar realizadas na
+          internet. </p>
+        <p>Alguns recursos que este servidor possui incluem: IPV6, FTP, balanceamento de carga, geolocalização baseada
+          em IP. Muitos serviços utilizam o Apache em conjunto com o Nginx, a fim de utilizar as vantagens dos dois, e
+          um minimizar as desvantagens do outro. O Apache é um servidor multiplataforma, utilizado tanto em Linux como
+          em Windows. </p>
+      </div>
+    </section>
+    <section class="div-2">
+      <h2>Nginx</h2>
+      <div class="text-section">
+        <p>Nginx é um servidor HTTP, Proxy e servidor de Email POP3, IMAP e SMTP, foi lançado em 4 de outubro de 2004,
+          ou seja, possui 15 anos, O criador do software, Igor Sysoev, iniciou seu projeto em 2002, como uma tentativa
+          de responder ao problema C10k, que era o desafio de gerenciar dez mil conexões ao mesmo tempo. Hoje, os
+          servidores WEB precisam lidar com muito mais conexões que isso, por esse motivo, ele oferece uma arquitetura
+          baseada em fluxo de tarefas (event-based web server), assim, tornando o um dos servidores mais confiáveis em
+          termos de velocidade e escalabilidade.
+          Devido a essa capacidade de lidar com muitas conexões, sites que possuem um tráfego muito elevado usam este
+          serviço, alguns destes são Google, Netflix, Adobe, Cloudflare, WordPress, dentre outros sites. Fazendo frente
+          com outro gigante do mercado, o Apache, que possui muitas funcionalidades, porém, o mesmo consome muito menos
+          memória que o mesmo. Ele e o Apache dominam cerca de 65% do tráfego global. Desde o começo foi projetado para
+          usar um algoritmo de tratamento de conexão sem bloqueio e orientado a eventos.</p>
+        <p>O Nginx foi desenvolvido, como já descrito acima, para baixo uso de memória, além de alta simultaneidade, as
+          solicitações são tratadas em um único thread, evitando que o servidor crie processos para cada solicitação.
+          Possui algumas vantagens que o fazem ser amplamente usado, tem uma estrutura de arquivos simples, que consiste
+          em módulos que são controlados no arquivo de configuração. Para arquivos estáticos, como PDF, ZIP, HTML, MP4 e
+          afins, o Nginx possui um desempenho excelente, além de que, possui compatibilidade com vários aplicativos Web,
+          como Ruby, Python, xenforo, Wordpress, esses, também são servidos por este servidor Web. </p>
+        <p>Um dos recursos que ele também possui, é o balanceamento de carga, que permite configurar a distribuição de
+          carga entre servidores diferentes. Desta forma, o Nginx se torna um ótimo serviço Web, tornando ele um dos
+          mais eficientes e leves do mercado, suportando tráfego simultâneo e baixo uso de memória, tornando o
+          facilmente customizável, sendo codigo aberto, servindo como streaming para MP4 e FLV, com ótimos níveis de
+          segurança, e por fim, o mesmo é gratuito. </p>
+      </div>
+    </section>
+    <section class="div-12">
+      <div class="text-conclusion">
+        <h2>Conclusão</h2>
+        <p>Comparando os dois serviços, precisamos entender que, o Apache trabalha com módulos carregados em tempo de
+          execução, já o Nginx, trabalha com módulos carregados dinamicamente.
+          Como o Apache usa uma estrutura baseada em mecanismos, pessoas que possuem serviços com um tráfego mais
+          pesado podem possuir problemas de desempenho, neste quesito, o Nginx se sai mais eficiente.
+          Outra diferença, é que o Nginx não cria um processo para cada solicitação, que é o caso da Apache, o modelo
+          do Nginx, distribui solicitações do usuário entre os processos de maneira eficiente, levando ele a ter uma
+          escalabilidade melhor. Outra vantagem do Nginx é que ele além de ele trabalhar melhor com a questão de várias
+          requisições, pois utiliza menos memória que o seu servidor rival, gerenciando tudo utilizando o mínimo de
+          recursos.
+          Em questão de compatibilidade de sistemas operacionais, ambos os serviços rodam em Unix como Windows, porém,
+          o Apache possui um melhor desempenho no Windows diante do Nginx.</p>
+        <p><b>Vantagens do Apache: </b>Dentre todos estes fatores, podemos citar as vantagens do Apache como: Código
+          aberto, até para usos comerciais, estável e confiável, seguro, fácil de configurar até mesmo para novos
+          usuários, suporte a multi plataformas além de possuir uma comunidade com suporte a dúvidas. </p>
+        <p><b>Desvantagens do Apache: </b>Dentre as desvantagens podemos citar problemas de desempenho em sites com
+          tráfego muito alto e como ele possui muitas opções, podem ocorrer vulnerabilidades de segurança dependendo de
+          com o usuário configura. </p>
+
+        <p><b>Vantagens do Nginx: </b>: Alto desempenho, baixa utilização de Hardware, facilmente customizável,
+          escalável, melhor performance para requisições simultâneas, código aberto, gratuito, proxy reverso com cache,
+          Streaming de FLV e MP4. </p>
+        <p><b>Desvantagens do Nginx: </b> podemos citar: Não há suporte dedicado, possui menos recursos que o Apache.
+        </p>
+      </div>
+    </section>
+  </div>
+
+
+  <footer class="div-12">
+    <p>Produzido pelo Curso de Ciencia da Computação - 2020</p>
+    <br><br><br><br><br>
+    <p>Universidade Regional do Noroeste do Estado do Rio Grande do Sul- Unijuí</p>
+  </footer>
+
+</body>
+
+</html>

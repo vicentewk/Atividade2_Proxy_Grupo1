@@ -6,13 +6,13 @@ Vagrant.configure("2") do |config|
     
      config.vm.provider "virtualbox" do |v|
       v.gui = true
-      v.name = "Atividade_1"
+      v.name = "Trabalho_1_7_Pontos_Grupo1"
       v.memory = 1024
       v.cpus = 1
     end 
     
     
-    config.vm.define "Atividade_1"
+    config.vm.define "Trabalho_1_7_Pontos_Grupo1"
     
     
      config.vm.box = "hashicorp/precise64"
