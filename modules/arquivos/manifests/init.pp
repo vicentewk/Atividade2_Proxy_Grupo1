@@ -71,6 +71,14 @@ file {'/usr/share/nginx/www/imagens/user.png':
      source => 'puppet:///modules/arquivos/imagens/nginx.png',
    } 
 
+   file {'/usr/share/nginx/www/imagens/arvore.png':
+     ensure => file,
+     require => Class["nginx"],
+     owner  => 'root',
+     group  => 'root',
+     mode   => '0644',
+     source => 'puppet:///modules/arquivos/imagens/arvore.png',
+   } 
 
 		
 

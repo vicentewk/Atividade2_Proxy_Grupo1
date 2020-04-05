@@ -148,15 +148,43 @@
         </p>
       </div>
     </section>
+    <div class="div-12 center">
+      <section class="div-4">
+        <div class="arvore center">
+          <img src="imagens/arvore.png">
+          <p>Árvore de diretórios da box</p>
+        </div>
+      </section>
+      <section class="div-74">
+        <div class="text-conclusion">
+          <h2>Dicas de Provisionamento</h2>
+          <p>No arquivo “Vagrantfile” é feita a configuração da máquina virtual, definindo parâmetros do Virtual Box,
+            qual box deverá ser usada, configuração do ip da VM e os caminhos do Puppet.</p>
+
+          <p>O arquivo default.pp dentro da pasta manifests é o primeiro arquivo que será executado pelo Vagrant, nele
+            são instalados os pacotes que serão utilizados.</p>
+
+          <p>Na pasta modules estão presentes os módulos utilizados na instalação dos pacotes no arquivo default.pp</p>
+
+          <p>Em modules/system-update/manifests, o arquivo init.pp garante a execução do comando “apt-get update” quando
+            o pacote for requerido.</p>
+
+          <p>No diretório modules/nginx/manifests, o init.pp tem como função garantir a instalação do pacote Nginx e a
+            execução do seu serviço.</p>
+
+          <p>Em modules/arquivos/files/.. estão presentes os arquivos que servirão como fontes para a página HTML.</p>
+          <p>O init.pp presente em modules/arquivos/manifests faz a criação dos arquivos necessários para o completo
+            funcionamento da página web a partir dos fontes presentes em modules/arquivos/files. Os comandos de criação
+            somente serão executados se o Nginx já estiver instalado, devido ao comando “require => Class["nginx"]”.</p>
+        </div>
+      </section>
+    </div>
   </div>
-
-
   <footer class="div-12">
     <p>Produzido pelo Curso de Ciencia da Computação - 2020</p>
     <br><br><br><br><br>
     <p>Universidade Regional do Noroeste do Estado do Rio Grande do Sul- Unijuí</p>
   </footer>
-
 </body>
 
 </html>
